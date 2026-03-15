@@ -102,6 +102,15 @@ export default function Home() {
   const contactRef = useRef(null);
   const footerRef = useRef(null);
   const heroMockupRef = useRef(null);
+  const videoRef = useRef(null);
+  const [isMuted, setIsMuted] = useState(true);
+
+  const toggleMute = useCallback(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(videoRef.current.muted);
+    }
+  }, []);
 
   // ── Nav scroll effect ──
   useEffect(() => {
@@ -381,13 +390,34 @@ export default function Home() {
               </div>
               <div className={styles.mockupVideoWrap}>
                 <video
+                  ref={videoRef}
                   className={styles.mockupVideo}
                   src="/Final Website Video.mp4"
                   autoPlay
+                  muted
                   loop
                   playsInline
                   preload="auto"
                 />
+                <button
+                  className={styles.muteToggle}
+                  onClick={toggleMute}
+                  aria-label={isMuted ? "Unmute video" : "Mute video"}
+                >
+                  {isMuted ? (
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                      <line x1="23" y1="9" x2="17" y2="15" />
+                      <line x1="17" y1="9" x2="23" y2="15" />
+                    </svg>
+                  ) : (
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                    </svg>
+                  )}
+                </button>
               </div>
             </div>
           </div>
