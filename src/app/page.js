@@ -299,9 +299,9 @@ export default function Home() {
             <Image
               src={Logo}
               alt="Markz Digital Logo"
-              width={32}
-              height={32}
-              style={{ borderRadius: "6px" }}
+              width={48}
+              height={48}
+              style={{ borderRadius: "10px" }}
               priority
             />
             <span className={styles.navName}>MARKZ DIGITAL</span>
@@ -382,12 +382,8 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.heroMockup} ref={heroMockupRef}>
-            <div className={styles.mockupCard}>
-              <div className={styles.mockupHeader}>
-                <div className={styles.mockupDots}>
-                  <span /><span /><span />
-                </div>
-              </div>
+            <div className={styles.phoneMockup}>
+              <div className={styles.phoneIsland} />
               <div className={styles.mockupVideoWrap}>
                 <video
                   ref={videoRef}
@@ -604,9 +600,9 @@ export default function Home() {
             <Image
               src={Logo}
               alt="Markz Digital Logo"
-              width={28}
-              height={28}
-              style={{ borderRadius: "4px" }}
+              width={40}
+              height={40}
+              style={{ borderRadius: "8px" }}
             />
             <span className={styles.footerName}>MARKZ DIGITAL</span>
           </div>

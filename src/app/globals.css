@@ -7,15 +7,15 @@
 
 :root {
   /* Brand colors */
-  --bg-deep: #0a0e1a;
-  --bg-card: rgba(255, 255, 255, 0.04);
-  --bg-card-hover: rgba(255, 255, 255, 0.07);
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-hover: rgba(108, 92, 231, 0.35);
-  --purple: #6c5ce7;
-  --purple-light: #a29bfe;
-  --purple-dark: #5a4bd1;
-  --purple-glow: rgba(108, 92, 231, 0.25);
+  --bg-deep: #0a0414;
+  --bg-card: rgba(147, 51, 234, 0.04);
+  --bg-card-hover: rgba(147, 51, 234, 0.08);
+  --border-subtle: rgba(147, 51, 234, 0.12);
+  --border-hover: rgba(168, 85, 247, 0.4);
+  --purple: #9333ea;
+  --purple-light: #c084fc;
+  --purple-dark: #7e22ce;
+  --purple-glow: rgba(147, 51, 234, 0.3);
   --white: #ffffff;
   --text-primary: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.6);
