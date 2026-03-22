@@ -500,20 +500,34 @@ export default function Home() {
                 </div>
                 <div>
                   <span className={styles.contactCardLabel}>Direct Outreach</span>
-                  <span className={styles.contactCardValue}>hello@markz.digital</span>
+                  <span className={styles.contactCardValue}>
+                    <a href="mailto:markz.digii@gmail.com" className={styles.contactLink}>markz.digii@gmail.com</a>
+                  </span>
                 </div>
               </div>
               <div className={styles.contactCard}>
                 <div className={styles.contactCardIcon}>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M2 12h20" />
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.27-2.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <div>
+                  <span className={styles.contactCardLabel}>Mobile Support</span>
+                  <span className={styles.contactCardValue}>
+                    <a href="tel:+919073717104" className={styles.contactLink}>+91 90737 17104</a>
+                  </span>
+                </div>
+              </div>
+              <div className={styles.contactCard}>
+                <div className={styles.contactCardIcon}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
                   </svg>
                 </div>
                 <div>
                   <span className={styles.contactCardLabel}>Global Studio</span>
-                  <span className={styles.contactCardValue}>Remote-First • NY Office</span>
+                  <span className={styles.contactCardValue}>Calcutta, West Bengal, IN</span>
                 </div>
               </div>
             </div>
@@ -608,8 +622,8 @@ export default function Home() {
           </div>
           <div className={styles.footerLinks}>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>Twitter</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>LinkedIn</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>Instagram</a>
+            <a href="https://linkedin.com/company/markz-digital/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>LinkedIn</a>
+            <a href="https://instagram.com/markz_digital/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>Instagram</a>
           </div>
           <span className={styles.copyright}>
             © 2026 MARKZ DIGITAL AGENCY. ALL RIGHTS RESERVED.
