@@ -458,7 +458,7 @@ export default function Home() {
           </p>
           <div className={styles.portfolioEmbed}>
             <iframe
-              src="/PORTFOLIO.pdf"
+              src="/PORTFOLIO.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
               className={styles.pdfViewer}
               title="Markz Digital Portfolio"
             />
