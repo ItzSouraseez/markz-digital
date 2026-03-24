@@ -527,7 +527,7 @@ export default function Home() {
                 </div>
                 <div>
                   <span className={styles.contactCardLabel}>Global Studio</span>
-                  <span className={styles.contactCardValue}>Calcutta, West Bengal, IN</span>
+                  <span className={styles.contactCardValue}>Kolkata, West Bengal, IN</span>
                 </div>
               </div>
             </div>
