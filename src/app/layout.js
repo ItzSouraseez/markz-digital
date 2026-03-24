@@ -27,6 +27,20 @@ export const metadata = {
       "Elevate your brand with precision marketing. High-performance growth strategy and elite creative direction.",
     type: "website",
   },
+  icons: {
+    icon: [
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+    apple: [
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
